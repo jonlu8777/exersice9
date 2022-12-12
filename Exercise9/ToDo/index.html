@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an example of a meta description.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="display-1"> Add to shopping list </h1>
+            <p> Welcome to a Lexicon exercise.</p>
+        </header>
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <form id="modForm">
+                        <div class="info">
+                            <div class="card-body text-center row">
+                                <input class="col-sm-7 m-sm-2" type="text" id="itemTolist" placeholder="What To Add">
+                                <button class="col-sm-4 btn btn-info my-3 btn-lg" type="submit"
+                                    id="formBtn">Add</button>
+                                <button class="col-sm-4 btn btn-outline-success btn-sm" type="button" id="saveBtn">Save
+                                    List</button>
+                                <button class="col-sm-4 btn btn-outline-primary btn-sm" type="button" id="loadBtn">Load
+                                    List</button>
+                                <button class="col-sm-4 btn btn-outline-danger btn-sm" type="button" id="clearBtn">Clear
+                                    List</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-6 text-center card">
+                <select id="select" class="m-sm-1 btn-outline-info" title="pick">
+                    <option value="red">Red background</option>
+                    <option value="blue">Blue background</option>
+                    <option value="green">Green background</option>
+                    <option value="orange">Orange background</option>
+                    <option value="yellow">Yellow background</option>
+                    <option value="brown">Brown background</option>
+                </select>
+                <ol class="text-center" id="output"></ol>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>   
+    <footer class="bg-info"> &copy; 2022 Jonas Lundberg </footer>
+</body>
+
+</html>
